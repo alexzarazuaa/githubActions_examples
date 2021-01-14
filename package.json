@@ -1,0 +1,19 @@
+{
+  "name": "githubactionsexample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawEstacio/githubActionsExample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dawEstacio/githubActionsExample/issues"
+  },
+  "homepage": "https://github.com/dawEstacio/githubActionsExample#readme"
+}
