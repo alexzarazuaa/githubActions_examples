@@ -35,7 +35,7 @@ jobs:
           run: "npm install jest && npm test"
  nodejs_environment_job:
     runs-on: ubuntu-latest
-    needs: [my_build, test-execution]
+    needs: [checkout_code, test-execution]
     env:
       DESTINATION_PERSON: '2DAW'
     steps:
