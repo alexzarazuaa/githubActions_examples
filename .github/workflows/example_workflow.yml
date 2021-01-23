@@ -11,8 +11,6 @@ jobs:
       - name: Get code
         uses: actions/checkout@v2
       - name: Run
-        with:
-          path: ./app
         run: |
          npm install
          npm run build
@@ -20,7 +18,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: up_artifacts
-          path: ./app/build
+          path: build
 
   Deploy_job:
     runs-on: ubuntu-latest
@@ -34,6 +32,6 @@ jobs:
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: five-rest.surge.sh
-          project: ./app
+          project: .
           login: ${{secrets.E_LoginSurge }}
           token: ${{secrets.Token_Surge }}
