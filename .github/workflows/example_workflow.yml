@@ -11,6 +11,8 @@ jobs:
       - name: Get code
         uses: actions/checkout@v2
       - name: Run
+        with:
+          path: ./app
         run: |
          npm install
          npm run build
@@ -18,7 +20,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: up_artifacts
-          path: build
+          path: ./app/build
 
   Deploy_job:
     runs-on: ubuntu-latest
