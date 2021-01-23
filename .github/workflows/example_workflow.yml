@@ -24,11 +24,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: Build_job
     steps:
-      - name: Download
+      - name: Downloading
         uses: actions/download-artifact@v2
         with: 
           name: up_artifacts
-      - name: To deploy
+      - name: Deploy
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: five-rest.surge.sh
