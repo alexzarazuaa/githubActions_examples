@@ -32,6 +32,6 @@ jobs:
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: five-rest.surge.sh
-          project: .
+          project: ./app
           login: ${{secrets.E_LoginSurge }}
           token: ${{secrets.Token_Surge }}
