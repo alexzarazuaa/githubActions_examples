@@ -9,10 +9,10 @@ const name = core.getInput("name");
 
 
 try {
-    bot.sendMessage(chat_Id,`${name}, el commit se ha realizado exitosamente.`);
+    bot.sendMessage(chat_Id,`Workflow ejecutado correctamente tras el último commit. Saludos ,${name}"`);
   
   } catch (error) {
     core.setFailed(error.message);
   }
   
-  core.setOutput("msg", "Mensaje enviado con exito");
+  core.setOutput("mensage", "Mensaje enviado");
