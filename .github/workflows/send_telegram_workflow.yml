@@ -15,4 +15,4 @@ jobs:
         with:
           token_father: ${{ secrets.BOT_TELEGRAM }}
           cahtId: ${{ secrets.TELEGRAM_ID_CHAT }}
-          name: "Zarazua "
+          name: "Zarazua"
