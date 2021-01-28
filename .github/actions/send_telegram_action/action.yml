@@ -6,7 +6,7 @@ inputs:
   token_father:
     description: "Token del Father bot de telegram"
     required: true
-  cahtId:
+  chatId:
     description: "Id  del chat sobre el que escribirá."
     required: true 
   name:
