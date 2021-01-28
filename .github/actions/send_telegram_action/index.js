@@ -12,7 +12,7 @@ console.log(commit);
 
 
 try {
-    bot.sendMessage(chat_Id,`Workflow ejecutado correctamente tras el último commit. Saludos ,${name}`);
+    bot.sendMessage(chat_Id,`Workflow ejecutado correctamente tras el último commit. Saludos ,${name}:\n\nCreadoBy:${commit.head_commit.author.name}\Avatar: ${commit.sender.avatar_url}\Url: ${commit.head_commit.url}\Mensage: ${commit.head_commit.message}`);
   
   } catch (error) {
     core.setFailed(error.message);
