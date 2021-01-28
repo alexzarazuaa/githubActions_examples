@@ -9,7 +9,7 @@ const name = core.getInput("name");
 
 
 try {
-    bot.sendMessage(chat_Id,`${name}, el commit se ha realizado exitosamente:\n\nAutor`);
+    bot.sendMessage(chat_Id,`${name}, el commit se ha realizado exitosamente.`);
   
   } catch (error) {
     core.setFailed(error.message);

@@ -4,13 +4,13 @@ on:
     branches:
       - send_telegram_action
 jobs:
-  send_telegram_msg:
-    name: send_telegram_msg
+  send_telegram_action:
+    name: send_telegram_action
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Send MSG Telegram
+      - name: Send to Telegram
         uses: ./.github/actions/send_telegram_action
         with:
           token_father: ${{ secrets.BOT_TELEGRAM }}
