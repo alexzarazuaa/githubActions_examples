@@ -15,4 +15,4 @@ try {
     core.setFailed(error.message);
   }
   
-  core.setOutput("mensage", "Mensaje enviado ");
+  core.setOutput("mensage", "Mensaje enviado.");
