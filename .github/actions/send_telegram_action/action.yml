@@ -1,0 +1,23 @@
+
+name: "Telegram BootFather"
+description: "Enviando un mensage por telegram con father bot"
+
+inputs:
+  token_father:
+    description: "Token del Father bot de telegram"
+    required: true
+  cahtId:
+    description: "Id  del chat sobre el que escribirá."
+    required: true 
+  name:
+    description: "Nombre" 
+    required: true
+  
+
+outputs:
+  message:
+    description: "Response okey"
+
+runs:
+  using: "node12"
+  main: "dist/index.js"
