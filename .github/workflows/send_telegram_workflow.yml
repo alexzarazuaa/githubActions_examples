@@ -14,5 +14,5 @@ jobs:
         uses: ./.github/actions/send_telegram_action
         with:
           token_father: ${{ secrets.BOT_TELEGRAM }}
-          chat_Id: ${{ secrets.TELEGRAM_ID_CHAT }}
+          cahtId: ${{ secrets.TELEGRAM_ID_CHAT }}
           name: "Zarazua"
