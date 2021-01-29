@@ -217,7 +217,7 @@ try {
     core.setFailed(error.message);
   }
   
-  core.setOutput("mensage", "Mensaje enviado.");
+  console.log("mensage", "Mensaje enviado.");
 
 /***/ }),
 
